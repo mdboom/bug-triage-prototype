@@ -27,7 +27,7 @@ response = HEADER + response.decode("utf-8")
 
 
 subprocess.check_call(
-    ["gh", "issue", "comment", issue_number, "--body", response.decode("utf-8")]
+    ["gh", "issue", "comment", issue_number, "--body", response]
 )
 
 
