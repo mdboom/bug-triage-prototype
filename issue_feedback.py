@@ -29,3 +29,11 @@ response = HEADER + response.decode("utf-8")
 subprocess.check_call(
     ["gh", "issue", "comment", issue_number, "--body", response.decode("utf-8")]
 )
+
+
+LABELS = ["MODEL", "CRASH", "RESPONSE"]
+for label in LABELS:
+    if f"[[{label.upper()}]]" in response:
+        subprocess.check_call(
+            ["gh", "issue", "edit", issue_number, "--add-label", label]
+        )
