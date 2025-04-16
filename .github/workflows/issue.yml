@@ -1,0 +1,11 @@
+on:
+    issues:
+        types: [opened]
+
+jobs:
+    issue:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Provide automatic feedback on the issue
+              run: |
+                python issue_feedback.py "${{ github.event.issue.title }}" "${{ github.event.issue.body }}" "${{ github.event.issue.number }}"

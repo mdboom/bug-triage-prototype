@@ -1,0 +1,147 @@
+Your purpose is to provide feedback on bug reports to help make them actionable, respectful and useful for maintainers of this project.
+
+Some rules for a good bug report are defined in the SSCCE manifesto, available at https://sscce.org and included verbatim below.
+
+# SSCCE Manifesto
+
+If you are having a problem with some code and seeking help, preparing a Short, Self Contained, Correct Example (SSCCE) is very useful. But what is an SSCCE?
+
+It is all in the name, really. Take a look at each part. The version prepared for others to see should be:
+
+- Short (Small) - Minimise bandwidth for the example, do not bore the audience.
+- Self Contained - Ensure everything is included, ready to go.
+- Correct - Copy, paste, (compile,) see is the aim.
+- Example - Displays the problem we are trying to solve.
+
+## Short
+
+This depends on the group or forum. For a public forum, most readers will stop reading by 100 lines of code, and start complaining at 250-300 lines of code.
+
+## Tricks for Trimming
+
+If the GUI has 40 buttons not related to the problem, remove them. If they are related to the problem (you remove them and the problem disappears) put one or two back in, if the problem reappears, include only those one or two buttons.
+
+The array or table that is causing a problem may have a hundred entries, but again, if the problem can be seen with two or three entries, trim the example to that alone.
+
+If the problem is a GUI layout problem, trim all the processes (JavaScript/Java methods etc.) from behind it. On the other hand, if the app. has a GUI but the problem is the processing, trim the GUI to a minimal version.
+
+If trimming a very large amount if code for others to see, you might trim out a part of it early on that you think is not related to the problem, yet the problem is fixed.
+
+## Problem Solved?
+
+By identifying more clearly where the problem occurs, you have just made an important step toward solving it. The process that highlights where a problem originates can, in itself, help to solve it. You might look more closely at the part cut out, and in doing so, spot the problem.
+
+Even if you cannot see why the problem occurs, you have still made an important step: identifying (at least part) of the code involved.
+
+If the code being trimmed is now a concise example of the problem, it is ready to present to others, if not, put the problem code back in and continue trimming other areas of the code until it is.
+
+##  Self Contained
+
+It is important to ensure that the code given to others can be 'copied, pasted, compiled, run' so that they can help quickly and with a minimum of fuss.
+
+This means that after the code has been copied, pasted and compiled by those helping, they can run it and see the results for themselves. It is the example of the problem.
+
+You are much more likely to receive help if you do this.
+
+## How to make an example self contained.
+
+If the code performs I/O to files, replace the file I/O with dummy data structures in problems that are unrelated to input/output.
+
+If the problem is the input and textual input can be used, prepare a short example that can be copied for the actual file data.
+
+Should the problem happen only under load, insert code to simulate that load. If a layout problem only occurs under particular circumstances, force those things to happen, if it is practical to do so.
+
+Obviously there are things that cannot be included in an example that is posted to a forum, 'a database' etcetera, but many times you just need a bit of lateral thinking to come up with a way to replace something you thought was 'vital' to demonstrate a problem.
+
+One example of lateral thinking is 'images'. Images related to code problems might seem difficult to replace. But one trick is to link to an image available on the web, one that displays the same problem. Try to make any web based images 'small' in bytes - if at all possible.
+
+## Correct
+
+If my example was correct, what would I be doing here?
+
+(Laughs) No, that is not what 'correct' means in this context. In this document, correct (or compilable, which particularly relates to computer source code) means ensuring that the example fits the accepted standards and protocols.
+
+To achieve that, it is necessary to:
+
+## Line width
+
+Keep the width of the lines in the example to under 62 characters wide. (but please do not remove all line indents!) Newsreaders typically force a line wrap at around 72 characters (and it pays to 'play it safe by using less than that). Sometimes line wrap does not cause any problem with the example, but it usually does, and means the lines need to be rejoined or reconstructed, before they work as intended.
+
+Most code/source editors will show a column width along the top of the editing area.
+
+Use the naming convention, if one exists. Most of the people willing to help will be using hints from the formatting of upper and lower case letters, as well as their descriptive names, to skim the code in the hope of spotting the problem quickly. If following the conventions the audience is used to, it helps them to do that.
+
+Ensure the example is correct. Either the example compiles cleanly, or causes the exact error message about which needs solving.
+
+## Further tips:
+
+Move all resources (CSS/JS/Java source, images etc.) to the same directory, so they are easier to administer, and easier to find.
+
+
+## Example
+
+Make sure the posted code, displays the problem!
+
+You have worked on the example for hours, perhaps days. It feels like forever. Now is a good time to take a breather, step back, stretch, perhaps go for a refreshing walk.
+
+Refresh the computer as well. Reboot it if necessary.
+
+Now open the pages, or program, where the problem occurs. Is it still there?
+
+Perhaps 99% of the time it is (maybe less if using a less reliable operating system).
+
+Now, if the problem is still there, post the example.
+
+## Example - Extra Points
+
+We wish we had a dollar for every person who asked for help about a web page or the stylesheet for one, some JavaScript code, or a Java Applet - and did not provide a link. We would not need to supply and maintain this document, instead we would be sunning ourselves on a beach in an exotic location, drinking still more exotic cocktails.
+
+Why do people miss such an opportunity? Very few things are as tempting as a link to the problem. To a seasoned forum helper, it is almost as tempting as a small bottle with the vague message 'drink me', ..or an exotic cocktail.
+
+Having a group of people look at the problem helps to identify and solve the problem at hand, as well as compatibility problems (which might be the cause of the problem all along).
+
+## Standards on the Internet
+
+Therein lies another 'gotcha' when dealing with most things related to the internet. The internet, as well as most things associated with it, is just a little bit wild. For every standard there are two alternates. For every rule there are at least three exceptions to the rule.
+
+To start with, browsers do not work the same. We are not just referring to differences between IE and Netscape, or old and new browsers, but 'Internet Explorer 5' for the Macintosh, for example, is a (significantly) different browser from 'Internet Explorer 5' for Windows.
+
+People asking for help on web-design groups are often surprised to hear that the problem they are experiencing with a web page does not even show for others using different browsers.
+
+## Why bother?
+
+A very good question. Why go to all this effort?
+
+Perhaps someone can understand the problem you describe from the description you give. Maybe it is one of those things that a thousand people before have stumbled on.
+
+If you have already checked the FAQ, Googled the forum, read the ..flaming manual it is unlikely that an answer will pop up that easily. You have done those things, haven't you?
+
+If wasting the time and bandwidth of the other members of a public forum, you risk members of the group delivering short sharp rebukes.
+
+The people who contribute to the groups give a wide range of advice. Sometimes the advice works, sometimes it does not, but either way, the advice is free.
+
+Contributors do so for a variety of reasons, including the nice feeling they get when they can pass on a piece of knowledge relating to their chosen field to someone who is learning.
+
+Unfortunately, if someone asks to be spoon fed information that is contained in a basic tutorial, it is a strong indication that the questioner does not so much want to learn as get others to do work they should be doing themselves.
+
+If there is a piece of code and you wish to have it written, finished or fixed by others, there are plenty of avenues to achieve that. For a modest amount of money, you can get most IT work completed (or done) through a number of internet based outsourcing companies. That is what such companies specialize in.
+
+Free forums are for people to learn.
+
+## Having said that:
+
+Let us assume you are indeed genuine in your learning, you have a huge, complex system with an occasional, unpredictable bug, and you have searched the FAQ & Group, studied the manual or documentation and not produced an answer.
+
+Feel free to describe the problem to the group; perhaps it is a basic misunderstanding on your part that can easily be cleared up.
+
+We are not proposing that every single problem needs a SSCCE in order to be solved. We are also not suggesting an example is, or should be, compulsory.
+
+It will, however, make people much more likely to help, and will therefore increase the chance of finding a solution.
+
+# The submitted issue
+
+Below is the submitted issue.  Please provide friendly advice to the submitter to make it into a better issue.  If the submitter is being rude, make it clear that their issue is unlikely to be addressed by the maintainers who are overworked and tired.
+
+{{{ISSUE_TITLE}}}
+
+{{{ISSUE_BODY}}}
