@@ -13,7 +13,7 @@ prompt = (
 )
 
 
-response = subprocess.check_output(["gh", "models", "run", "gpt-40-mini", prompt])
+response = subprocess.check_output(["gh", "models", "run", "gpt-4o-mini", prompt])
 
 
 subprocess.check_call(
