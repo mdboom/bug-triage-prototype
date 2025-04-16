@@ -2,6 +2,9 @@ on:
     issues:
         types: [opened, reopened]
 
+env:
+    GH_TOKEN: ${{ secrets.BUG_TRIAGE }}
+
 jobs:
     issue:
         runs-on: ubuntu-latest
